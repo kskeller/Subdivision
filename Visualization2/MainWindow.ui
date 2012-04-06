@@ -1,0 +1,346 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>779</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="MyGLWidget" native="1" name="m_w_glWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>491</width>
+      <height>471</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSlider" name="m_hSl_Subdivisions" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum" >
+     <number>10</number>
+    </property>
+    <property name="pageStep" >
+     <number>10</number>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string># Subidvisions:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="m_l_sub" >
+       <property name="text" >
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QSlider" name="m_hSl_Triangles" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>211</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2" >
+    <property name="geometry" >
+     <rect>
+      <x>50</x>
+      <y>430</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <item>
+      <widget class="QLabel" name="m_l_Triangle" >
+       <property name="text" >
+        <string>Triangle:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="m_sB_Triangle" />
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGraphicsView" name="m_gV_Texture" >
+    <property name="geometry" >
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>128</width>
+      <height>128</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>191</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="1" >
+      <layout class="QVBoxLayout" name="verticalLayout" >
+       <item>
+        <widget class="QLineEdit" name="m_lE_pos_p1_x" />
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m_lE_pos_p1_y" />
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="4" >
+      <layout class="QVBoxLayout" name="verticalLayout_3" >
+       <item>
+        <widget class="QLineEdit" name="m_lE_pos_p3_x" />
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m_lE_pos_p3_y" />
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0" >
+      <layout class="QVBoxLayout" name="verticalLayout_4" >
+       <item>
+        <widget class="QLabel" name="label_2" >
+         <property name="text" >
+          <string>x:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3" >
+         <property name="text" >
+          <string>y:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="2" >
+      <layout class="QVBoxLayout" name="verticalLayout_2" >
+       <item>
+        <widget class="QLineEdit" name="m_lE_pos_p2_x" />
+       </item>
+       <item>
+        <widget class="QLineEdit" name="m_lE_pos_p2_y" />
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>360</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" >
+     <item>
+      <widget class="QSpinBox" name="m_sB_Texture" />
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_pB_Apply" >
+       <property name="text" >
+        <string>Apply</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>390</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" >
+     <item>
+      <widget class="QPushButton" name="m_pB_Rotate" >
+       <property name="text" >
+        <string>Rotate</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_pB_Flip" >
+       <property name="text" >
+        <string>Flip</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_4" >
+    <property name="geometry" >
+     <rect>
+      <x>50</x>
+      <y>240</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>(0,0)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5" >
+    <property name="geometry" >
+     <rect>
+      <x>170</x>
+      <y>240</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>(0,1)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6" >
+    <property name="geometry" >
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>(1,1)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7" >
+    <property name="geometry" >
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>(0,1)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>779</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Open" />
+    <addaction name="action_Add_Texture" />
+    <addaction name="actionSave_Current_Texture" />
+    <addaction name="action_Exit" />
+   </widget>
+   <addaction name="menu_File" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="action_Open" >
+   <property name="text" >
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="action_Add_Texture" >
+   <property name="text" >
+    <string>&amp;Add Texture</string>
+   </property>
+  </action>
+  <action name="actionSave_Current_Texture" >
+   <property name="text" >
+    <string>Save Current Texture</string>
+   </property>
+  </action>
+  <action name="action_Exit" >
+   <property name="text" >
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyGLWidget</class>
+   <extends>QWidget</extends>
+   <header>MyGLWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Exit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>389</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
